@@ -1,0 +1,27 @@
+Release Notes
+-------------
+
+- Version 1.0-alpha
+  Release date: 2011-11-30
+  
+  Features:
+  * Application build on Drupal-6.22
+  * Create a metadata record for a data asset via a web form or a file upload
+  * Apply an approval workflow for metadata records
+  * Manage users and organizations
+  * Create metric reports
+  * Manage contents through Drupal's native functionalities
+  
+  Known Issues:
+  * While inserting a metadata extension (such as U.S. Data Policy),
+    the Agency Responsible field value does not default to user's agency value.
+    [Flexi-Field issue as reported on http://drupal.org/node/592888]
+  * While entering extension fields, incorrect validation messages are displayed.
+    This does not prevent the user from correctly saving data and proceeding.
+    [http://drupal.org/node/390480]
+  * Bulk operation console messages do not convey the correct result.
+    Messages only show that an operation has been carried out on a node,
+    and does not show the actual result of the workflow operation.
+    [Limitation from the Workflow module]
+  * XML file upload is currently disabled until the metadata schema is finalized,
+    and an XSD can be generated to validate uploads against.
